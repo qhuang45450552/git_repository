@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        div{
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+        <!--容器-->
+    <div class="container" style="background: yellow;">
+        容器样式一,固定宽度的容器
+    </div>
+    <br>
+    <div class="container-fluid" style="background: yellow;">
+        容器样式二，宽度为100%的容器
+    </div>
+    <!--栅格系统-->
+    <div class="container">
+        <!--栅格系统必须放在container容器内-->
+        <div class="row">
+            <div class="col-sm-4">111</div>
+            <div class="col-sm-4">222</div>
+            <div class="col-sm-4">333</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-1">col-1</div>
+            <div class="col-md-1">col-2</div>
+            <div class="col-md-1">col-3</div>
+            <div class="col-md-1">col-4</div>
+            <div class="col-md-1">col-5</div>
+            <div class="col-md-1">col-6</div>
+            <div class="col-md-1">col-7</div>
+            <div class="col-md-1">col-8</div>
+            <div class="col-md-1">col-9</div>
+            <div class="col-md-1">col-10</div>
+            <div class="col-md-1">col-11</div>
+            <div class="col-md-1">col-12</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-1 col-md-3 col-lg-6 col-xs-6">hahaha</div>
+            <div class="col-sm-1 col-md-3 col-lg-6 col-xs-6">lalala</div>
+        </div>
+        <!--列偏移-->
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2">偏移2</div>
+            <div class="col-md-1 col-md-offset-3">偏移3</div>
+            <div class="col-md-2">不偏移</div>
+        </div>
+
+        <!--列嵌套-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-4">111</div>
+                    <div class="col-sm-4">222</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">333</div>
+                    <div class="col-sm-6">444</div>
+                </div>
+            </div>
+        </div>
+        <!--列排序-->
+        <div class="row">
+            <div class="col-md-9 col-md-push-3">111</div>
+            <div class="col-md-3 col-md-pull-9">222</div>
+
+        </div>
+    </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

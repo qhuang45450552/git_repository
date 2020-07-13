@@ -1,0 +1,33 @@
+一、安装
+    http://v3.bootcss.com/ 下载相应的版本
+二、引入bootstrap
+    １.CDN
+        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+        https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css
+
+        <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+        https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+       https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    2.本地:
+        参照helloworld.html
+    3.先加载bootstrap.css -> 加载jQuery.js -> 加载bootstrap.js顺序不能变
+三、全局样式
+    设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。
+    1.移动端优先
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    2.样式重置
+        使用Normalize.css
+    3.布局容器
+        .container 类用于固定宽度并支持响应式布局的容器。
+        <div class="container">
+          ...
+        </div>
+        .container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。
+        <div class="container-fluid">
+          ...
+        </div>
+    4.Glyphicons 字体图标
+        a.不要和其他组件混合使用：图标类不能和其它组件直接联合使用。它们不能在同一个元素上与其他类共同存在。应该创建一个嵌套的 <span> 标签，并将图标类应用到这个 <span> 标签上。
+        b.只对内容为空的元素起作用:图标类只能应用在不包含任何文本内容或子元素的元素上。
+四、栅格系统
